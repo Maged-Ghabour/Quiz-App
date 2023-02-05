@@ -3,7 +3,7 @@
 import { ref, computed } from 'vue'
 import { allQuestions } from "./quiz.js"
 
-const questions = ref(allQuestions)
+const questions = ref(allQuestions) || []
 
 const quizCompleted = ref(false)
 
@@ -84,7 +84,19 @@ const NextQuestion = () => {
       <h2>You have finished the quiz!</h2>
       <p>Your score is {{ score }}/{{ questions.length }}</p>
     </section>
+
+    
+  <footer >
+    <h1>Our Team :</h1>
+    <ul>
+      <li>ahmed Samy</li>
+      <li>Esalm megahd</li>
+      <li>Ma7roooooos</li>
+      <li>Maged Ghabour</li>
+    </ul>
+  </footer>
   </main>
+
 </template>
 
 <style>
@@ -201,5 +213,20 @@ p {
   color: #8F8F8F;
   font-size: 1.5rem;
   text-align: center;
+}
+footer{
+  margin: 20px 5px 0px 5px;
+  border: 1px solid #ddd;
+  padding: 10px 30px;
+}
+ul{
+  display: flex;
+  justify-content: center;
+  align-items: space-between;
+  flex-direction: column;
+}
+li{
+  padding: 5px 10px;
+  list-style-type: none;
 }
 </style>
