@@ -85,16 +85,6 @@ const NextQuestion = () => {
       <p>Your score is {{ score }}/{{ questions.length }}</p>
     </section>
 
-    
-  <footer >
-    <h1>Our Team :</h1>
-    <ul>
-      <li>ahmed Samy</li>
-      <li>Esalm megahd</li>
-      <li>Ma7roooooos</li>
-      <li>Maged Ghabour</li>
-    </ul>
-  </footer>
   </main>
 
 </template>
@@ -216,7 +206,7 @@ p {
 }
 footer{
   margin: 20px 5px 0px 5px;
-  border: 1px solid #ddd;
+  border: 1px solid #baa5a5;
   padding: 10px 30px;
 }
 ul{
